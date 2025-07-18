@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const widget = document.getElementById("n8n-chat-widget");
+
   if (!widget) return;
 
   widget.innerHTML = `
