@@ -31,9 +31,3 @@ document.addEventListener("DOMContentLoaded", function () {
 
       const data = await response.json();
       log.innerHTML += `<div><strong>Bot:</strong> ${data.reply || "[No reply received]"}</div>`;
-      log.scrollTop = log.scrollHeight;
-    } catch (err) {
-      log.innerHTML += `<div style="color:red;">Error: Could not reach chatbot.</div>`;
-    }
-  });
-});
